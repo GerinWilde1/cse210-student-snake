@@ -8,8 +8,26 @@ from game.point import Point
 
 
 class Food(Actor):
-    pass
-    _points = 0
+    
 
-    def reset():
-        pass
+
+    def __init__(self):
+
+        super().__init__()
+        self.set_text("@")
+        self._points = 0
+        self.reset()
+
+
+    def get_points(self):
+
+
+        return self._points
+
+    def reset(self):
+        """moves the food to a new random location then it's picked up."""
+        self.points = random.randint(1, 5)
+        x = random.randint(1, constants.MAX_X - 2)
+        y = random.randint(1, constants.MAX_Y - 2)
+        position = Point(x, y)
+        self.set_position(position)
