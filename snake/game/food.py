@@ -26,8 +26,8 @@ class Food(Actor):
 
     def reset(self):
         """moves the food to a new random location then it's picked up."""
-        self.points = random.randint(1, 5)
-        x = random.randint(1, constants.MAX_X - 2)
-        y = random.randint(1, constants.MAX_Y - 2)
+        self._points = random.randint(1, 5)
+        x = random.randint(2, constants.MAX_X - 2)
+        y = random.randint(2, constants.MAX_Y - 2)
         position = Point(x, y)
         self.set_position(position)
