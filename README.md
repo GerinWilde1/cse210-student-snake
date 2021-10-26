@@ -38,5 +38,7 @@ root                    (project root folder)
 * Asciimatics 1.12.0
 
 ## Authors
+Gerin Wilde
 ---
 * # TODO: Add your name and email here
+Gerinw@byui.edu
