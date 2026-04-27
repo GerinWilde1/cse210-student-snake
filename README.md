@@ -40,5 +40,4 @@ root                    (project root folder)
 ## Authors
 Gerin Wilde
 ---
-* # TODO: Add your name and email here
-Gerinw@byui.edu
+* Gerinw.job@gmail.com
